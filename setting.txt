@@ -7,7 +7,7 @@ git
 git-completion
 vim
 
-* 2016/8 現在、setup-x86-64.ext で git-completion が見つからなかった。
+* 2016/8 現在、setup-x86-64.ext で git-completion が見つからず。
   しょうがないので Git 本家のソースから Get。
   https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
   ここの Raw ボタンで表示されるページの URL を wget すれば OK。
@@ -17,14 +17,14 @@ vim
 
 @@@ Cygwin64 - Teraterm
 
-* 2016/8 時点では本件は問題なかった。
-  メモとしては一応残しておく。
+* 2016/8 時点では本件は問題なし。
+  メモとして一応残す。
 
 http://changineer.info/network/ccie_tools/windows_terminal_teraterm#51
 
 2013/12/28 時点で、最新の Tera Term / Cygwin の組み合わせでは Tera Term から Cygwin を起動させることができない。
-これは Tera Term に同梱されている "cygterm.exe" が 32bit でコンパイルされているため、らしい。
-この不具合は公式マニュアルにも記載がある模様。
+これは Tera Term に同梱されている "cygterm.exe" が 32bit でコンパイルされているため。
+この不具合は公式マニュアルにも記載がある。
 -> Tera Term に同梱されている cygterm+.tar.gz というファイルを 64bit 環境でビルド。
 
 $ cd
@@ -58,7 +58,7 @@ chmod +x /usr/bin/apt-cyg
 apt-cyg -m http://ftp.iij.ad.jp/pub/cygwin/ update
 
 * googlecode の apt-cyg は閉鎖されており、取得できない！
-  現在は Github に移行している模様。
+  現在は Github に移行している。
   https://github.com/transcode-open/apt-cyg.git
 
 
@@ -107,7 +107,7 @@ git init --bare --shared=true
 chown -R apache .
 chgrp -R apache .
 
-* apache アクセスの場合。
+* apache アクセス。
 
 
 @@@ git command ex.
