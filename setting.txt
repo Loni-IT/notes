@@ -8,7 +8,7 @@ git-completion
 vim
 
 * 2016/8 現在、setup-x86-64.ext で git-completion が見つからず。
-  しょうがないので Git 本家のソースから Get。
+  代わりに Git 本家のソースから取得する。
   https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
   ここの Raw ボタンで表示されるページの URL を wget すれば OK。
 
@@ -17,15 +17,14 @@ vim
 
 @@@ Cygwin64 - Teraterm
 
-* 2016/8 時点では本件は問題なし。
-  メモとして一応残す。
+* 2016/8 時点では問題なし。以下メモ。
 
 http://changineer.info/network/ccie_tools/windows_terminal_teraterm#51
 
 2013/12/28 時点で、最新の Tera Term / Cygwin の組み合わせでは Tera Term から Cygwin を起動させることができない。
 これは Tera Term に同梱されている "cygterm.exe" が 32bit でコンパイルされているため。
-この不具合は公式マニュアルにも記載がある。
--> Tera Term に同梱されている cygterm+.tar.gz というファイルを 64bit 環境でビルド。
+この不具合は公式マニュアルにも記載あり。
+Tera Term に同梱されている cygterm+.tar.gz を 64bit 環境でビルドすれば OK。
 
 $ cd
 $ mkdir archive
@@ -57,7 +56,7 @@ mv apt-cyg  /usr/bin
 chmod +x /usr/bin/apt-cyg
 apt-cyg -m http://ftp.iij.ad.jp/pub/cygwin/ update
 
-* googlecode の apt-cyg は閉鎖されており、取得できない！
+* googlecode の apt-cyg は閉鎖されており、取得できない。
   現在は Github に移行している。
   https://github.com/transcode-open/apt-cyg.git
 
@@ -121,6 +120,16 @@ archive
 
 log カスタマイズ
  git log --d  tag..  --oneline --pretty="%h %x09 %an %x09%x09 %s"
+
+
+@@@
+cygwin環境でも下記にtaglistを置くとTlistコマンドが機能する。
+（pluginフォルダを作る）
+~/.vim\plugin\taglist.vim
+
+Author: Yagappan Lakshmanan (yegappan AT yahoo DOT com)
+Version :4.6
+Last Modified: Feb 26, 2013
 
 
 @@@ プロンプト内へのブランチ名表示
