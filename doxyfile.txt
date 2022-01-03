@@ -1,20 +1,20 @@
 # Project（Doxygenプロジェクト全般に関するオプション）
 
-DOXYFILE_ENCODING   	CP932       	# Doxyfileの文字コード
-PROJECT_NAME        	ProjectName 	# プロジェクト名
-PROJECT_NUMBER      	v0.0.0      	# バージョン番号
-OUTPUT_LANGUAGE     	Japanese    	# 生成ドキュメントの記述言語
-TAB_SIZE            	4           	# タブの幅 (スペースの数)
-BUILTIN_STL_SUPPORT 	YES         	# STL（std::vector等） を解析含めるか
+DOXYFILE_ENCODING       CP932           # Doxyfileの文字コード
+PROJECT_NAME            ProjectName     # プロジェクト名
+PROJECT_NUMBER          v0.0.0          # バージョン番号
+OUTPUT_LANGUAGE         Japanese        # 生成ドキュメントの記述言語
+TAB_SIZE                4               # タブの幅 (スペースの数)
+BUILTIN_STL_SUPPORT     YES             # STL（std::vector等） を解析含めるか
 
 # Build（ドキュメント出力するレベルに関するオプション）
 
-EXTRACT_ALL           	YES 	# Doxygen用コメントがない記述についてもドキュメント出力するか
-EXTRACT_PRIVATE       	YES 	# クラスのprivateメンバを出力するか
-EXTRACT_STATIC        	YES 	# ファイルのstaticメンバを出力するか
-EXTRACT_LOCAL_METHODS 	YES 	# ローカル関数を出力するか
-SORT_MEMBER_DOCS      	NO  	# ファイル・クラスメンバをアルファベット順にソートするか（メンバを宣言順に出力するか）
-SHOW_DIRECTORIES      	YES 	# ディレクトリ階層を出力するか
+EXTRACT_ALL             YES             # Doxygen用コメントがない記述についてもドキュメント出力するか
+EXTRACT_PRIVATE         YES             # クラスのprivateメンバを出力するか
+EXTRACT_STATIC          YES             # ファイルのstaticメンバを出力するか
+EXTRACT_LOCAL_METHODS   YES             # ローカル関数を出力するか
+SORT_MEMBER_DOCS        NO              # ファイル・クラスメンバをアルファベット順にソートするか（メンバを宣言順に出力するか）
+SHOW_DIRECTORIES        YES             # ディレクトリ階層を出力するか
 
 # Messages（ドキュメントコンパイル時（生成時）に表示する、警告メッセージや進捗メッセージに関連するオプション）
 
@@ -22,16 +22,16 @@ SHOW_DIRECTORIES      	YES 	# ディレクトリ階層を出力するか
 
 # Input files（ドキュメント化する入力ファイルに関するオプション）
 
-INPUT_ENCODING 	CP932 	# ソースファイルの文字エンコード指定
-RECURSIVE      	YES   	# サブディレクトリを検索するか
+INPUT_ENCODING          CP932           # ソースファイルの文字エンコード指定
+RECURSIVE               YES             # サブディレクトリを検索するか
 
 # Source Browsing（ソースブラウジングに関するオプション）
 
-SOURCE_BROWSER         	YES 	# ソースコードのリストを出力するか
-INLINE_SOURCES         	YES 	# 関数、クラス、列挙型 の本体を直接ドキュメントに併記するか
-STRIP_CODE_COMMENTS    	NO  	# Doxygen用コメントを出力ドキュメントから隠すか
-REFERENCED_BY_RELATION 	YES 	# 自関数がどの他関数からコールされているかのリストを併記するか
-REFERENCES_RELATION    	YES 	# 自関数が呼び出している他関数のリストを併記するか
+SOURCE_BROWSER          YES             # ソースコードのリストを出力するか
+INLINE_SOURCES          YES             # 関数、クラス、列挙型 の本体を直接ドキュメントに併記するか
+STRIP_CODE_COMMENTS     NO              # Doxygen用コメントを出力ドキュメントから隠すか
+REFERENCED_BY_RELATION  YES             # 自関数がどの他関数からコールされているかのリストを併記するか
+REFERENCES_RELATION     YES             # 自関数が呼び出している他関数のリストを併記するか
 
 # Index（出力ドキュメント内におけるクラスや関数一覧のソート条件に関するオプション）
 
@@ -39,18 +39,18 @@ REFERENCES_RELATION    	YES 	# 自関数が呼び出している他関数のリ�
 
 # HTML Output（HTML出力に関するオプション）
 
-HTML_TIMESTAMP        	NO    	# Doxygenを実行した時間を記述するか
-HTML_DYNAMIC_SECTIONS 	YES   	# 図の表示非表示を制御できるセクションを配置するか
-GENERATE_HTMLHELP     	YES   	# HTML Help Workshopによって読み込み可能なプロジェクトファイルを生成するか
-CHM_FILE              	      	# .chmファイルのファイル名（パスを含む。ブランクの場合index.chm）
-CHM_INDEX_ENCODING    	CP932 	# .chmファイルの目次タブの文字コード
-ENUM_VALUES_PER_LINE  	1     	# 一行にまとめられるenum定義の数
-GENERATE_TREEVIEW     	YES   	# ツリー状のインデックス(階層構造)表示するフレーム枠を生成するか
-TREEVIEW_WIDTH        	200   	# 上記フレームのデフォルト幅
+HTML_TIMESTAMP          NO              # Doxygenを実行した時間を記述するか
+HTML_DYNAMIC_SECTIONS   YES             # 図の表示非表示を制御できるセクションを配置するか
+GENERATE_HTMLHELP       YES             # HTML Help Workshopによって読み込み可能なプロジェクトファイルを生成するか
+CHM_FILE                                # .chmファイルのファイル名（パスを含む。ブランクの場合index.chm）
+CHM_INDEX_ENCODING      CP932           # .chmファイルの目次タブの文字コード
+ENUM_VALUES_PER_LINE    1               # 一行にまとめられるenum定義の数
+GENERATE_TREEVIEW       YES             # ツリー状のインデックス(階層構造)表示するフレーム枠を生成するか
+TREEVIEW_WIDTH          200             # 上記フレームのデフォルト幅
 
 # LaTex Output（LaTex出力に関するオプション）
 
-GENERATE_LATEX 	NO 	# LaTexファイルを生成するか（主にhtmlファイルをpdf化する際に使用）
+GENERATE_LATEX          NO              # LaTexファイルを生成するか（主にhtmlファイルをpdf化する際に使用）
 
 # RTF Output（リッチテキスト形式の出力に関するオプション）
 
@@ -74,8 +74,8 @@ GENERATE_LATEX 	NO 	# LaTexファイルを生成するか（主にhtmlファイ�
 
 # Preprocessor（プリプロセッサに関するオプション）
 
-SEARCH_INCLUDES 	YES 	# include を見つけた際 INCLUDE_PATH 内のインクルードファイルを検索するか
-PREDEFINED      	    	# 用途に応じてプリプロセッサでの定義マクロを指定（gcc の -D オプションに類似）
+SEARCH_INCLUDES         YES             # include を見つけた際 INCLUDE_PATH 内のインクルードファイルを検索するか
+PREDEFINED                              # 用途に応じてプリプロセッサでの定義マクロを指定（gcc の -D オプションに類似）
 
 # External（外部参照に関するオプション）
 
@@ -83,11 +83,11 @@ PREDEFINED      	    	# 用途に応じてプリプロセッサでの定義マ�
 
 # Dot tool（図の出力に関するオプション）
 
-HAVE_DOT           	YES 	# クラス図などの図を出力するか
-TEMPLATE_RELATIONS 	YES 	# テンプレートクラスとインスタンスの関係図を出力するか
-CALL_GRAPH         	YES 	# 関数の呼び出し依存関係図を出力するか
-CALLER_GRAPH       	YES 	# 関数の呼び出し元依存関係図を出力するか
-DOT_PATH           	    	# dotツールのパスを指定
+HAVE_DOT                YES             # クラス図などの図を出力するか
+TEMPLATE_RELATIONS      YES             # テンプレートクラスとインスタンスの関係図を出力するか
+CALL_GRAPH              YES             # 関数の呼び出し依存関係図を出力するか
+CALLER_GRAPH            YES             # 関数の呼び出し元依存関係図を出力するか
+DOT_PATH                                # dotツールのパスを指定
 
 # 他
 
